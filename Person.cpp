@@ -3,8 +3,6 @@
 #include<string>
 using namespace std;
 
-
-
 Person::Person(const string& id,const string& lastName,const string& firstName,const string& gender,const string& birthDate)
 {
 	this->id = id;

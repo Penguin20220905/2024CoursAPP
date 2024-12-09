@@ -1,6 +1,5 @@
 ﻿#include <string>
 #include <iostream>
-//#include "Person.h"
 #include "Student.h"
 #include "Teacher.h"
 #include "Course.h"

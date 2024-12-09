@@ -1,15 +1,20 @@
-#include<iostream>
 #include "Person.h"
-#include<string>
+#include <string>
+#include <iostream>
 using namespace std;
 
-Person::Person(const string& id,const string& lastName,const string& firstName,const string& gender,const string& birthDate)
+// Constructor, 建構子, 建構函數
+//Person::Person(const string& id, const string& lastName, const string& firstName, const string& gender, const string& birthDate)
+//{
+//	this->id = id;
+//	this->lastName = lastName;
+//	this->firstName = firstName;
+//	this->lastName = lastName;
+//	this->birthDate = birthDate;
+//}
+
+Person::Person(const string& id, const string& lastName, const string& firstName, const string& gender, const string& birthDate) : id(id), lastName(lastName), firstName(firstName), gender(gender), birthDate(birthDate)
 {
-	this->id = id;
-	this->lastName = lastName;
-	this->firstName = firstName;
-	this->gender = gender;
-	this->birthDate = birthDate;
 }
 
 Person::Person()
@@ -68,9 +73,9 @@ void Person::setBirthDate(const string& birthDate)
 
 void Person::display() const
 {
-	cout << "ID:" << id << endl;
-	cout << "姓:" << lastName << endl;
-	cout << "名:" << firstName << endl;
-	cout << "性別:" << gender << endl;
-	cout << "生日:" << birthDate << endl;
+	cout << "ID: " << id << endl;
+	cout << "姓: " << lastName << endl;
+	cout << "名: " << firstName << endl;
+	cout << "性別: " << gender << endl;
+	cout << "生日: " << birthDate << endl;
 }

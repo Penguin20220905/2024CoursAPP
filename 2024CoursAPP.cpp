@@ -16,7 +16,7 @@ int main()
 void InitializeData()
 {
 
-	Student student1("A123456789", "陳", "小明", "男", "1999-01-01", "S001", Department::ComputerSciece, ClassName::_1A);
+	Student student1("A123456789", "郭", "威廷", "男", "2002-09-20", "4B0G0044", Department::ComputerSciece, ClassName::_4A);
 	student1.display();
 
 	cout << endl;

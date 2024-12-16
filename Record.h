@@ -1,6 +1,5 @@
 #pragma once
 #include <string>
-using namespace std;
 #include <ctime>
 using namespace std;
 class Record
@@ -12,7 +11,7 @@ private:
 	string courseId;
 	time_t recordDate;
 public:
-	Record();
+
 	Record(const string& studentId,const string& courseId);
 
 	int getRecordId() const;

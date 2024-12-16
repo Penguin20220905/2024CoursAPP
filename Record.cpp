@@ -1,5 +1,7 @@
 #include "Record.h"
-
+#include<iostream>
+#include<iomanip>
+using namespace std;
 Record::Record()
 {
 }
@@ -8,6 +10,11 @@ Record::Record(string& studentId, string& courseId):studentId(studentId),courseI
 {
 }
 
+
+int Record::getRecordId() const
+{
+	return recordId;
+}
 
 string Record::getStudentId() const
 {

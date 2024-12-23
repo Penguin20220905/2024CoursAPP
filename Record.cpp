@@ -7,6 +7,7 @@ int Record::nextId = 1;
 Record::Record(const string& studentId, const string& courseId) : studentId(studentId), courseId(courseId),
 recordId(nextId++)
 {
+	time(&recordDate);
 }
 
 

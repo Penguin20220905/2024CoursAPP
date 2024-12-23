@@ -15,7 +15,7 @@ private:
 	vector<Course> teachingCourses; // 教師所授課程
 
 public:
-	Teacher(const string& id, const string& lastName, const string& firstName, const string& gender, const string birthDate, const string& teacherId, Department department, ClassName, const vector<Course>& courses);
+	Teacher(const string& id, const string& lastName, const string& firstName, const string& gender, const string birthDate, const string& teacherId, Department department, ClassName className, const vector<Course>& courses);
 
 	// getter
 	string getTeacherId() const;

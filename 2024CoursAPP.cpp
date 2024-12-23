@@ -64,8 +64,6 @@ void initializeData()
 	records.push_back(Record("S001", "C002"));
 	records.push_back(Record("S002", "C001"));
 	records.push_back(Record("S002", "C002"));
-
-
 }
 
 void displayMenu() {
@@ -291,7 +289,6 @@ void queryRecord()
 		cout << "找不到選課紀錄" << endl;
 	}
 }
-
 
 void addStudent()
 {

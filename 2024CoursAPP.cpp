@@ -83,7 +83,14 @@ void displayMenu() {
 		cout << "10. 新增課程資料" << endl;
 		cout << "11. 新增教師資料" << endl;
 		cout << "12. 新增選課紀錄" << endl;
-
+		cout << "13. 刪除學生資料" << endl;
+		cout << "14. 刪除課程資料" << endl;
+		cout << "15. 刪除教師資料" << endl;
+		cout << "16. 刪除選課資料" << endl;
+		cout << "17. 修改學生資料" << endl;
+		cout << "18. 修改課程資料" << endl;
+		cout << "19. 修改教師資料" << endl;
+		cout << "20. 修改選課資料" << endl;
 		cout << "0. 退出" << endl;
 		cin >> choice;
 		switch (choice) {
@@ -159,6 +166,8 @@ void displayMenu() {
 			cout << "按任意鍵繼續..." << endl;
 			system("pause");
 			break;
+		case 13:
+			cout<<""
 		case 0:
 			cout << "退出" << endl;
 			break;

@@ -167,7 +167,45 @@ void displayMenu() {
 			system("pause");
 			break;
 		case 13:
-			cout<<""
+			cout << "刪除學生資料" << endl;
+			deleteStudent();
+			system("pause");
+			break;
+		case 14:
+			cout << "刪除課程資料" << endl;
+			deleteCourse();
+			system("pause");
+			break;
+		case 15:
+			cout << "刪除教師資料" << endl;
+			deleteTeacher();
+			system("pause");
+			break;
+		case 16:
+			cout << "刪除選課紀錄" << endl;
+			deleteRecord();
+			system("pause");
+			break;
+		case 17:
+			cout << "修改學生資料" << endl;
+			modifyStudent();
+			system("pause");
+			break;
+		case 18:
+			cout << "修改課程資料" << endl;
+			modifyCourse();
+			system("pause");
+			break;
+		case 19:
+			cout << "修改教師資料" << endl;
+			modifyTeacher();
+			system("pause");
+			break;
+		case 20:
+			cout << "修改選課紀錄" << endl;
+			modifyRecord();
+			system("pause");
+			break;
 		case 0:
 			cout << "退出" << endl;
 			break;
@@ -390,4 +428,19 @@ void addRecord()
 	cout << "請輸入課程編號:";
 	cin >> courseId;
 	records.push_back(Record(studentId, courseId));
+}
+
+void deleteStudent()
+{
+	string studentId;
+	cout << "請輸入學生學號:";
+	cin >> studentId;
+	bool found = false;
+	for (auto it = students.begin(); it != students.end(); it++) {
+		if (it->getStudentId() == studentId) {
+			students.erase(it);
+			found = true;
+			break;
+		}
+	}
 }

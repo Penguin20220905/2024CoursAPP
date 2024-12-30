@@ -19,5 +19,6 @@ public:
 	string getCourseId() const;
 	string getRecordDate() const;
 	void display();
+	void setCourseId(const string& courseId);
 };
 

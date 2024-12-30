@@ -17,7 +17,6 @@ void deleteStudent();
 void deleteCourse();
 void deleteTeacher();
 void deleteRecord();
-void modifyRecord();
 void modifyStudent();
 void modifyCourse();
 void modifyTeacher();

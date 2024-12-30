@@ -45,6 +45,9 @@ void Record::display()
 	cout << "¿ï½Ò¤é´Á:" << getRecordDate() << endl;
 	cout << "---------------------" << endl;
 }
+void Record::setCourseId(const string& courseId) {
+	this->courseId = courseId;
+}
 
 
 
